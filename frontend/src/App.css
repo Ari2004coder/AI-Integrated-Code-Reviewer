@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html, #root{
+  width: 100%;
+  height: 100%;
+}
+main{
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  gap:1rem
+}
+main .left, main .right{
+  height: 100%;
+  width: 50%;
+  max-width: 100%;
+
+  resize: horizontal;;
+  overflow: auto;
+  background: crimson;
+  border-radius: 0.7rem;
+}
+main .left{
+  background: #000000;
+  position: relative;
+}
+
+.left .code {
+  margin:0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  font-size: 1.5rem;
+}
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right:1rem;
+  padding: 0.5rem 2rem;
+  background: #ffffff;
+  color: #000000;
+border-radius: 4px;
+cursor: pointer;
+user-select: none;}
+main .right{
+  background: #101010;
+}
+main .right{
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+}
+main .right h1{
+  text-align: center;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(90deg,blue,red);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
